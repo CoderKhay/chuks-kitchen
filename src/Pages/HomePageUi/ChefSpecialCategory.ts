@@ -1,5 +1,5 @@
-import Jollof from "../assets/images/Jollof.png"
-import TilapiaPepperSoup from "../assets/images/Tilapia-pepper-soup.png"
+import Jollof from "../../assets/images/Jollof.png"
+import TilapiaPepperSoup from "../../assets/images/Tilapia-pepper-soup.png"
 
 const ChefSpecialCategory = [
   { id: 1, name: "Jollof Rice & Fried Chicken", image: Jollof, description:"Our signature Jollof rice, cooked to perfection, served with succulent fried chicken",price:3500 },
