@@ -25,7 +25,7 @@ const PopularCategories = () => {
           </div>
         ))}
         <p className="text-center mt-10 text-blue-400 cursor-pointer">
-          View all categories
+          View All Categories
         </p>
       </div>
     </div>

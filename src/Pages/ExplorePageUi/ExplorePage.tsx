@@ -60,7 +60,9 @@ const ExplorePage = () => {
                 <h2 className="font-semibold text-lg">{menu.name}</h2>
                 <p className="text-sm">{menu.description}</p>
                 <div className="flex justify-between">
-                  <p className="text-[#FF7A18]">&#8358;{menu.price}</p>
+                  <p className="text-[#FF7A18]">
+                    &#8358;{menu.price.toLocaleString()}
+                  </p>
                   <div className="bg-[#FF7A18] w-4 h-4 rounded-full">
                     <PlusIcon color="white" size={16} />
                   </div>
@@ -69,6 +71,9 @@ const ExplorePage = () => {
             </div>
           ))}
         </div>
+        <p className="text-center mt-10 text-blue-400 cursor-pointer">
+          View All Categories
+        </p>
       </section>
       <section className="mt-10 ml-5 mr-5">
         <h1 className="font-medium pl-3">Jollof Rice & Entrees</h1>
@@ -87,7 +92,9 @@ const ExplorePage = () => {
                 <h2 className="font-semibold text-lg">{menu.name}</h2>
                 <p className="text-sm">{menu.description}</p>
                 <div className="flex justify-between">
-                  <p className="text-[#FF7A18]">&#8358;{menu.price}</p>
+                  <p className="text-[#FF7A18]">
+                    &#8358;{menu.price.toLocaleString()}
+                  </p>
                   <div className="bg-[#FF7A18] w-4 h-4 rounded-full">
                     <PlusIcon color="white" size={16} />
                   </div>
@@ -96,6 +103,9 @@ const ExplorePage = () => {
             </div>
           ))}
         </div>
+        <p className="text-center mt-10 text-blue-400 cursor-pointer">
+          View All Categories
+        </p>
       </section>
       <section className="mt-10 ml-5 mr-5">
         <h1 className="font-medium pl-3">Swallow & Soups</h1>
@@ -114,7 +124,9 @@ const ExplorePage = () => {
                 <h2 className="font-semibold text-lg">{menu.name}</h2>
                 <p className="text-sm">{menu.description}</p>
                 <div className="flex justify-between">
-                  <p className="text-[#FF7A18]">&#8358;{menu.price}</p>
+                  <p className="text-[#FF7A18]">
+                    &#8358;{menu.price.toLocaleString()}
+                  </p>
                   <div className="bg-[#FF7A18] w-4 h-4 rounded-full">
                     <PlusIcon color="white" size={16} />
                   </div>
@@ -123,6 +135,9 @@ const ExplorePage = () => {
             </div>
           ))}
         </div>
+        <p className="text-center mt-10 text-blue-400 cursor-pointer">
+          View All Categories
+        </p>
       </section>
     </div>
   );
