@@ -10,13 +10,14 @@ type ChefCategoryType = {
 
 const ChefSpecial = () => {
   return (
-    <div className="mt-50">
+    <div className="mt-50 md:mt-40">
       <h1 className="text-center mt-26 text-4xl">Chef's Special</h1>
-      <div className="flex justify-center flex-wrap mt-10">
-        {(ChefsSpecial as ChefCategoryType[]).map((chef) => (
+      <div className="flex justify-center flex-wrap mt-10 gap-10">
+        {(ChefsSpecial as ChefCategoryType[]).map((chef, index) => (
           <div
             key={chef.id}
-            className="flex flex-col items-center gap-2 mt-10 bg-white w-[80%] rounded-lg shadow-2xl p-1"
+            className={`flex flex-col items-center gap-2 mt-10 bg-white w-[80%] rounded-lg shadow-2xl p-1 
+              ${index >= 3 ? "hidden md:block" : ""} md:w-[30%]`}
           >
             <img
               src={chef.image}
@@ -31,14 +32,16 @@ const ChefSpecial = () => {
             </p>
 
             <section className="flex justify-between items-center w-full p-3 mb-10 mt-3">
-              <p className="text-[#FF7A18]">&#8358; {chef.price}</p>
+              <p className="text-[#FF7A18]">
+                &#8358; {chef.price.toLocaleString()}
+              </p>
               <button className="bg-[#FF7A18] p-2 text-white rounded-sm w-30">
                 Add to Cart
               </button>
             </section>
           </div>
         ))}
-        <p className="text-center mt-10 text-blue-400 cursor-pointer">
+        <p className="text-center mt-10 text-blue-400 cursor-pointer md:hidden">
           View all categories
         </p>
       </div>

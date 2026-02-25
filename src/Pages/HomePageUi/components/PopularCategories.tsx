@@ -8,13 +8,13 @@ type PopularCategoryType = {
 
 const PopularCategories = () => {
   return (
-    <div className="mt-50">
-      <h1 className="text-center mt-26 text-4xl">Popular Categories</h1>
-      <div className="flex justify-center flex-wrap mt-10">
-        {(Categories as PopularCategoryType[]).map((category) => (
+    <div className="mt-50 md:mt-20">
+      <h1 className="text-center mt-26 text-4xl ">Popular Categories</h1>
+      <div className="flex justify-center flex-wrap mt-10 md:gap-10 ">
+        {(Categories as PopularCategoryType[]).map((category, index) => (
           <div
             key={category.id}
-            className="flex flex-col items-center gap-2 mt-10 bg-white w-[80%] rounded-lg shadow-2xl p-1"
+            className={`flex flex-col items-center gap-2 mt-10 bg-white w-[80%] rounded-lg shadow-2xl p-1 ${index >= 3 ? "hidden md:block" : ""} md:w-[30%]`}
           >
             <img
               src={category.image}
@@ -24,7 +24,7 @@ const PopularCategories = () => {
             <h2 className="text-center mt-2 mb-2 text-lg">{category.name}</h2>
           </div>
         ))}
-        <p className="text-center mt-10 text-blue-400 cursor-pointer">
+        <p className="text-center mt-10 text-blue-400 cursor-pointer md:hidden">
           View All Categories
         </p>
       </div>
