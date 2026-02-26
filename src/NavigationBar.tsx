@@ -7,7 +7,7 @@ const NavigationBar = () => {
 
   return (
     <nav className="flex justify-between items-center pr-6 bg-white shadow-2xl fixed top-0 bottom-0 z-1 w-full h-12">
-      <h2 className="text-[#FF7A18] font-Island text-3xl ml-6">
+      <h2 className="text-[#FF7A18] font-Island text-3xl ml-6 md:text-lg md:w-60 lg:text-3xl">
         Chuks Kitchen
       </h2>
 
@@ -96,7 +96,7 @@ const NavigationBar = () => {
         >
           Account
         </NavLink>
-        <button className="bg-[#FF7A18] p-2 w-25 text-white text-sm rounded-md">
+        <button className="bg-[#FF7A18] p-2 w-25 text-white text-sm rounded-md cursor-pointer">
           <Link to="login">Login</Link>
         </button>
       </div>
