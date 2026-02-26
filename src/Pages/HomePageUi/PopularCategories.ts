@@ -1,4 +1,4 @@
-import Jollof from "../../assets/images/jollof.png";
+import Jollof from "../../assets/images/Jollof.png";
 import Suya from "../../assets/images/Suya.png";
 import Swallow from "../../assets/images/Swallow.png";
 import Snacks from "../../assets/images/Snacks.png";
