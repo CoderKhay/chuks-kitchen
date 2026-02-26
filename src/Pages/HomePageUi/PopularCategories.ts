@@ -1,7 +1,7 @@
 import Jollof from "../../assets/images/jollof.png";
 import Suya from "../../assets/images/Suya.png";
 import Swallow from "../../assets/images/Swallow.png";
-import Snacks from "../../assets/images/snacks.png";
+import Snacks from "../../assets/images/Snacks.png";
 
 const popularCategories = [
   { id: 1, name: "Jollof Delights", image: Jollof },
