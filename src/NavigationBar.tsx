@@ -20,36 +20,48 @@ const NavigationBar = () => {
       </button>
       <div className="absolute top-12 w-full">
         {mobile && (
-          <div className=" border-t backdrop-blur-lg border-slate-800 ">
+          <div className=" border-t backdrop-blur-lg bg-white/40">
             <div className="px-4 py-4 sm:py-6 space-y-3 sm:space-y-4">
-              <Link
+              <NavLink
+                style={({ isActive }) => ({
+                  color: isActive ? "#FF7A18" : "",
+                })}
                 to="/"
-                className="block text-black hover:text-whibte text-sm lg:text-base hover:text-white"
+                className="block text-black hover:text-whibte text-sm lg:text-base"
                 onClick={() => setMobile(false)}
               >
                 Home
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
+                style={({ isActive }) => ({
+                  color: isActive ? "#FF7A18" : "",
+                })}
                 to="explore"
-                className="block text-black hover:text-white text-sm lg:text-base"
+                className="block text-black text-sm lg:text-base"
                 onClick={() => setMobile(false)}
               >
                 Explore
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
+                style={({ isActive }) => ({
+                  color: isActive ? "#FF7A18" : "",
+                })}
                 to="myOrders"
-                className="block text-black hover:text-white text-sm lg:text-base"
+                className="block text-black text-sm lg:text-base"
                 onClick={() => setMobile(false)}
               >
                 My Orders
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
+                style={({ isActive }) => ({
+                  color: isActive ? "#FF7A18" : "",
+                })}
                 to="account"
-                className="block text-black hover:text-white text-sm lg:text-base"
+                className="block text-black text-sm lg:text-base"
                 onClick={() => setMobile(false)}
               >
                 Account
-              </Link>
+              </NavLink>
             </div>
           </div>
         )}
