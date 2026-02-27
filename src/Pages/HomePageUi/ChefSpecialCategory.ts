@@ -1,4 +1,4 @@
-import Jollof from "../../assets/images/Jollof.png";
+import Jollof from "../../assets/images/jollof.png";
 import TilapiaPepperSoup from "../../assets/images/Tilapia-pepper-soup.png";
 import JollofRiceAndFriedChicken from "../../assets/images/jollof_friedChicken.png";
 import EgusiSoupAndPoundedYam from "../../assets/images/egusi_poundedyam.png";
