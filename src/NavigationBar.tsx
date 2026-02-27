@@ -20,7 +20,7 @@ const NavigationBar = () => {
       </button>
       <div className="absolute top-12 w-full">
         {mobile && (
-          <div className=" border-t backdrop-blur-lg bg-white/40">
+          <div className=" border-t backdrop-blur-lg bg-white/40 shadow-2xs ">
             <div className="px-4 py-4 sm:py-6 space-y-3 sm:space-y-4">
               <NavLink
                 style={({ isActive }) => ({
