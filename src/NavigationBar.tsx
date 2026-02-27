@@ -62,6 +62,13 @@ const NavigationBar = () => {
               >
                 Account
               </NavLink>
+
+              <Link
+                to="login"
+                className="bg-[#FF7A18] p-2 w-25 text-white text-sm rounded-md cursor-pointer"
+              >
+                Login
+              </Link>
             </div>
           </div>
         )}

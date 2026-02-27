@@ -3,6 +3,7 @@ import LayoutRoute from "./Pages/Layout/LayoutRoute";
 import HomePage from "./Pages/HomePageUi/components/HomePage";
 import ExplorePage from "./Pages/ExplorePageUi/ExplorePage";
 import MyOrders from "./Pages/MyOrdersPageUi/MyOrders";
+import AccountPage from "./Pages/AccountPageUi/AccountPage";
 import Login from "./Pages/Auth/Login";
 import SignUp from "./Pages/Auth/SignUp";
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "myOrders",
         Component: MyOrders,
+      },
+      {
+        path: "account",
+        Component: AccountPage,
       },
       {
         path: "login",
