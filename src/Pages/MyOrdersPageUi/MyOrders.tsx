@@ -15,6 +15,7 @@ const MyOrders = () => {
             className="flex items-center gap-2 rounded-lg shadow-2xl p-1 border w-105 md:w-full"
           >
             <img
+              loading="lazy"
               src={order.image}
               alt={order.name}
               className="w-20 h-20 object-cover rounded-sm"

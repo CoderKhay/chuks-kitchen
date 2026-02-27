@@ -8,6 +8,7 @@ const HomePage = () => {
   return (
     <div className="pt-12 h-full md:h-auto relative">
       <img
+        loading="lazy"
         src={HomeBackground}
         alt="home page background image"
         className="w-full h-full object-cover brightness-50 md:h-132"

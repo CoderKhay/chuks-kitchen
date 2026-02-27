@@ -17,6 +17,7 @@ const PopularCategories = () => {
             className={`flex flex-col items-center gap-2 mt-10 bg-white w-[80%] rounded-lg shadow-2xl p-1 ${index >= 3 ? "hidden md:block" : ""} md:w-[30%]`}
           >
             <img
+              loading="lazy"
               src={category.image}
               alt={category.name}
               className="w-full h-60 object-cover rounded-t-lg"

@@ -20,6 +20,7 @@ const ChefSpecial = () => {
               ${index >= 3 ? "hidden md:block" : ""} md:w-[30%]`}
           >
             <img
+              loading="lazy"
               src={chef.image}
               alt={chef.name}
               className="w-full h-60 object-cover rounded-t-lg"

@@ -52,6 +52,7 @@ const ExplorePage = () => {
               className={`flex items-center md:flex-col md:w-[33%] lg:w-[30%] md:object-contain gap-2 mt-10 p-1 md:p-0 bg-white w-full rounded-md shadow-2xl md:gap-10 ${index >= 3 ? "hidden md:block" : ""} }`}
             >
               <img
+                loading="lazy"
                 src={popular.image}
                 alt={popular.name}
                 className="w-25 h-25 rounded-md md:w-full md:h-60 md:rounded-b-none  md:object-cover"
@@ -84,6 +85,7 @@ const ExplorePage = () => {
               className="flex items-center md:flex-col md:w-[33%] lg:w-[30%] md:object-contain gap-2 mt-10 p-1 md:p-0 bg-white w-full rounded-md shadow-2xl md:gap-10"
             >
               <img
+                loading="lazy"
                 src={menu.image}
                 alt={menu.name}
                 className="w-25 h-25 rounded-md md:w-full md:h-60 md:rounded-b-none  md:object-cover"
@@ -116,6 +118,7 @@ const ExplorePage = () => {
               className="flex items-center md:flex-col md:w-[33%] lg:w-[30%] md:object-contain gap-2 mt-10 p-1 md:p-0 bg-white w-full rounded-md shadow-2xl md:gap-10"
             >
               <img
+                loading="lazy"
                 src={menu.image}
                 alt={menu.name}
                 className="w-25 h-25 rounded-md md:w-full md:h-60 md:rounded-b-none  md:object-cover"

@@ -12,6 +12,7 @@ const SignUp = () => {
     <div className="bg-white h-screen flex flex-col md:flex-row items-center mb-45">
       <div className="relative w-[45%] hidden md:block h-233 pt-25">
         <img
+          loading="lazy"
           src={authImage}
           alt=""
           className="h-179 object-cover w-142 mt-30"
