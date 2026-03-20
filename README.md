@@ -1,6 +1,8 @@
 # Chuks Kitchen
 
-A modern React + TypeScript web application built with Vite. This project serves as a sample food ordering platform showcasing navigation, authentication, explore page, and home components in a clean and responsive UI.
+### An Internship project
+
+A modern React plus TypeScript web application built with Vite. This project serves as a sample food ordering platform showcasing navigation, authentication, explore page, and home components in a clean and responsive UI.
 
 ## 🚀 Features
 
